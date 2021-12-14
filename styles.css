@@ -1,0 +1,83 @@
+*{
+    font-size:16px;
+    box-sizing: border-box;
+}
+
+#calculator{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap: 16px;
+    background:linear-gradient(93deg, rgba(40,40,40,.9) 2%, #282828 7%,#282828 70%, rgba(40,40,40,.8));
+    padding: 32px;
+    padding-top:0;
+    border-radius:32px;
+    box-shadow:4px 4px 1px 1px rgba(0,0,0,.25)
+}
+
+#calculator > h2{
+    align-self:flex-start;
+    font-weight:normal;
+    color:#FFF;
+}
+#calculator > h2 > span{
+    font-weight:bold;
+}
+
+#display{
+    font-size:4rem;
+    text-align:right;
+    background-color:#B3B3B3;
+    width:100%;
+    line-height: 6rem;
+    height:6rem;
+    max-width:100%;
+    box-shadow: inset 4px 4px 1px 1px rgba(0,0,0,.25);
+}
+
+
+button{
+    border:none;
+    padding:none;
+}
+
+#calculator > #buttons-container {
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.button-row{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    gap:16px;
+}
+
+.calculator-btn{
+    padding: 32px;
+    border-radius:16px;
+    font-size:2rem;
+    font-weight:bold;
+    cursor: pointer;
+    transition:background-color .4s;
+    box-shadow: 4px 4px 2px 2px rgba(0,0,0,.5);
+}
+
+.calculator-btn:hover{
+    background-color:cadetblue;
+}
+
+#divide-btn, #multiply-btn, #subtract-btn, #add-btn{
+    background-color: orange;
+}
+
+#divide-btn:hover, #multiply-btn:hover, #subtract-btn:hover, #add-btn:hover{
+    background-color: red;
+}
+
+#clear-btn{
+    font-size:1rem;
+}
